@@ -61,7 +61,7 @@ estimation = [];
 
 % Model and experiment settings
 estimation.modelindex = 1;
-estimation.experiments.indices = [2];%, 2, 3, 4];
+estimation.experiments.indices = [1];%, 2, 3, 4];
 estimation.experiments.weight = [1];%, 1, 1, 1];
 
 % Optimization settings

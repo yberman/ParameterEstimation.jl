@@ -61,7 +61,7 @@ estimation = [];
 
 % Model and experiment settings
 estimation.modelindex = 1;
-estimation.experiments.indices = [2];%, 2, 3, 4];
+estimation.experiments.indices = [1];%, 2, 3, 4];
 estimation.experiments.weight = [1];%, 1, 1, 1];
 
 % Optimization settings
@@ -69,7 +69,7 @@ estimation.optimization.method = 'simplexIQM';
 estimation.optimization.options.maxfunevals = 2000;
 
 % Integrator settings
-estimation.integrator.options.abstol = 1e-12; %-10?
+estimation.integrator.options.abstol = 1e-12;
 estimation.integrator.options.reltol = 1e-12;
 estimation.integrator.options.minstep = 0;
 estimation.integrator.options.maxstep = Inf;

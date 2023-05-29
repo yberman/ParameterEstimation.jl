@@ -55,6 +55,10 @@ inputs.exps.exp_data{1}=[
   -0.0526315789473687 0.08883462764346389
   -2.2474414425768536e-16 0.09850110911987633
 ];
+
+inputs.ivpsol.rtol=1.0e-12;                            % [] IVP solver integration tolerances
+inputs.ivpsol.atol=1.0e-12;
+
 inputs.PEsol.id_global_theta=char('p1', 'p3');
 inputs.PEsol.global_theta_max=2.*ones(1,2);
 inputs.PEsol.global_theta_min=-1.*ones(1,2);

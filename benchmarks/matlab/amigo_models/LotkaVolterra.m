@@ -59,6 +59,10 @@ inputs.exps.exp_data{1}=[100.0
 0.7662870925577698
 0.5670214463059633
 ];
+
+inputs.ivpsol.rtol=1.0e-12;                            % [] IVP solver integration tolerances
+inputs.ivpsol.atol=1.0e-12;
+
 inputs.PEsol.id_global_theta=char('k1', 'k2', 'k3');
 inputs.PEsol.id_global_theta_y0='all';               % [] 'all'|User selected| 'none' (default)
 inputs.PEsol.global_theta_y0_max=[110 110];                % Maximum allowed values for the initial conditions
