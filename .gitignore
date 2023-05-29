@@ -28,15 +28,3 @@ docs/site/
 Manifest.toml
 
 # End of https://www.toptal.com/developers/gitignore/api/julia
-*.code-workspace
-.vscode
-benchmarks/matlab*/src
-*.txt
-!benchmarks/matlab*/iqm/*/*/*/*.txt
-timecommand
-objf*.m
-sharable
-*.zip
-.R*
-*.png
-!point_error_data/data/*/*.txt
