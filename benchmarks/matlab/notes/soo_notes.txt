@@ -1,4 +1,4 @@
 to-do per file
-1. check the input model against the amigo files/paper
-2. check the data match
-3. integration tolerances should be 10e-12 (or was this amigo only?)
+1. check the input model against the .jl model files (data_sample)
+2. check the initial conditions are set appropriately
+3. integration tolerances should be 10e-12 for both
