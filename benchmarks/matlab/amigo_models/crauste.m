@@ -64,12 +64,12 @@ inputs.ivpsol.rtol=1.0e-12;                            % [] IVP solver integrati
 inputs.ivpsol.atol=1.0e-12; 
 
 inputs.PEsol.id_global_theta_y0='all';               % [] 'all'|User selected| 'none' (default)
-inputs.PEsol.global_theta_y0_max=1 * ones(1,5);                % Maximum allowed values for the initial conditions
-inputs.PEsol.global_theta_y0_min=0.0001 * ones(1,5);
+inputs.PEsol.global_theta_y0_max=1. * ones(1,5);                % Maximum allowed values for the initial conditions
+inputs.PEsol.global_theta_y0_min=0.* ones(1,5);
 %inputs.PEsol.global_theta_y0_guess=[1.0 1.0 1.0 1.0 1.0];% nominal as initial guess to check consistency of data
 inputs.PEsol.id_global_theta='all';
 inputs.PEsol.global_theta_max=1.*ones(1,13);
-inputs.PEsol.global_theta_min=0.0001*ones(1,13);
+inputs.PEsol.global_theta_min=0.*ones(1,13);
 
 %=============================================================
 % COST FUNCTION RELATED DATA

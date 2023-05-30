@@ -30,7 +30,7 @@ paramdata = {
     'k13'   0.0 1.0
     'k14'   0.0 1.0
     'k21'   0.0 1.0
-    'k31'   0.0 1.5
+    'k31'   0.0 1.0
     'k41'   0.0 1.0
 };
 
@@ -42,10 +42,10 @@ paramdatalocal = {
 % Initial conditions (always experiment dependend)
 % Names         Lower bounds  Upper bounds
 icdata = {
-    'x1'  0.5 1.5
-    'x2'  0.5 2.5
-    'x3'  0.5 1.5
-    'x4'  -1.5 1.0
+    'x1'  0.0 1.0
+    'x2'  0.0 1.0
+    'x3'  0.0 1.0
+    'x4'  0.0 1.0
 };
 
 
