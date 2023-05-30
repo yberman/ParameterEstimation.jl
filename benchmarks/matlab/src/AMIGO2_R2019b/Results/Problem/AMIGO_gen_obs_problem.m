@@ -19,9 +19,9 @@ function ms=AMIGO_gen_obs_problem(y,inputs,par,iexp)
 switch iexp
 
 case 1
-Y1=x    ;
+Y1=w    ;
 Y2=z    ;
-Y3=w    ;
+Y3=x    ;
 Y4=yy+vv;
 ms(:,1)=Y1;ms(:,2)=Y2;ms(:,3)=Y3;ms(:,4)=Y4;
 end

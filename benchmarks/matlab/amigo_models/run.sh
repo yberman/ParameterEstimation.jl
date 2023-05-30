@@ -1,7 +1,7 @@
 #!/bin/bash
 # run all *.m file in directory and redirect output to file with same name
 fstr="\n\nCPU time: %S+%U sec\tMax. resident set size: %M KB\t Elapsed: %e sec."
-mfiles=(crauste.m crauste_JRB2.m daisy_mamil3.m FHN.m FHN_JRB2.m LotkaVolterra.m LotkaVolterra_JRB.m simple.m daisy_ex3_local.m daisy_mamil4_local.m HIV.m HIV_JRB.m HIV_JRB_ub10.m)
+mfiles=(crauste.m daisy_mamil3.m FHN.m LotkaVolterra.m simple.m daisy_ex3_local.m HIV.m)
 mkdir -p outputs
 for file in ${mfiles[@]}; do
     echo "Running $file, output to outputs/${file%.m}.out"

@@ -17,7 +17,7 @@ inputs.model.st_names=char('x1','x2','x3');    %x1=V, x2=R        % Names of the
 inputs.model.par_names=char('a12', 'a13', 'a21', 'a31', 'a01');             % Names of the parameters
 %inputs.model.stimulus_names=char('light');  % Names of the stimuli
 inputs.model.eqns=char('dx1 = -(a21 + a31 + a01) * x1 + a12 * x2 + a13 * x3;', 'dx2 = a21 * x1 - a12 * x2;', 'dx3 = a31 * x1 - a13 * x3;');                                 % Equations describing system dynamics.
-inputs.model.par = [0.03, 0.02, 0.05, 0.03, 0.02];         % Nominal value for the parameters
+inputs.model.par = [0.167, 0.333, 0.5, 0.667, 0.833];         % Nominal value for the parameters
 % inputs.model.AMIGOsensrhs = 1;                       % Generate the sensitivity equations for exact
 %==================================
 % EXPERIMENTAL SCHEME RELATED DATA
@@ -25,45 +25,46 @@ inputs.model.par = [0.03, 0.02, 0.05, 0.03, 0.02];         % Nominal value for t
 % EXPERIMENT DESIGN
 inputs.exps.n_exp=1;                          % Number of experiments
 % EXPERIMENT 1
-inputs.exps.exp_y0{1}=[1.0, 1.0, 1.0];        % Initial conditions
-inputs.exps.t_f{1}=10;                       % Experiments duration
+inputs.exps.exp_y0{1}=[0.25, 0.5, 0.75];        % Initial conditions
+inputs.exps.t_f{1}=1;                       % Experiments duration
 inputs.exps.n_obs{1}=2;                       % Number of observables
 inputs.exps.obs_names{1}=char('y1','y2'); % Names of the observables
-inputs.exps.obs{1}=char('y1=x2','y2=x1');
-inputs.exps.t_con{1}=[0 10];                 % Input swithching times including:
+inputs.exps.obs{1}=char('y1=x1','y2=x2');
+inputs.exps.t_con{1}=[0 1];                 % Input swithching times including:
 inputs.exps.n_s{1}=20;
 inputs.exps.data_type='real';
-inputs.exps.exp_data{1}=[2.0 1.0
-2.03952942072742 0.9276311719129872
-2.063221883532521 0.8994348378831487
-2.080799851429902 0.8947677729545105
-2.0972158733694894 0.9026760235677073
-2.114913303689913 0.917355779057597
-2.135025223998584 0.9357399522024451
-2.1580091372075536 0.9562150772012912
-2.1839819715155784 0.9779392274173088
-2.212896022034377 1.000479501924943
-2.244630573775909 1.0236194211694714
-2.279038919356856 1.0472566533738128
-2.3159718618589618 1.0713487571870446
-2.3552888930281184 1.0958844426164835
-2.396862976081291 1.1208683880658927
-2.440582067035102 1.1463132544093857
-2.486349024393318 1.1722355161506313
-2.5340807699641132 1.1986533132215766
-2.583707146614094 1.2255853696080141
-2.635169698746112 1.2530504723319549
+inputs.exps.exp_data{1}=[
+0.25 0.5
+0.24164112111954192 0.5020631869286435
+0.23405739965453667 0.5038996720910395
+0.22716652264917694 0.5055306485113934
+0.2208950227384578 0.506975085362278
+0.2151773264209839 0.5082499664619374
+0.209954904735863 0.5093705031202208
+0.2051755153507044 0.5103503240866537
+0.2007925262364608 0.5112016450614154
+0.1967643120051907 0.5119354200045073
+0.19305371536522833 0.5125614761330655
+0.18962756639207762 0.5130886344357856
+0.18645625362106194 0.5135248172058021
+0.18351334120796453 0.5138771440332476
+0.18077522741324484 0.5141520174458422
+0.17822083964404717 0.5143551993913263
+0.17583136252066175 0.5144918794466611
+0.1735899950728742 0.5145667357296222
+0.17148173405298042 0.514583989267508
+0.16949318066779653 0.5145474524986335
 ];
 
 inputs.ivpsol.rtol=1.0e-12;                            % [] IVP solver integration tolerances
 inputs.ivpsol.atol=1.0e-12;
 
 inputs.PEsol.id_global_theta='all';
-inputs.PEsol.global_theta_max=2.*ones(1,5);
-inputs.PEsol.global_theta_min=-1.*ones(1,5);
+inputs.PEsol.global_theta_max=1.0*ones(1,5);
+inputs.PEsol.global_theta_min=0.0001*ones(1,5);
 inputs.PEsol.id_global_theta_y0='all';               % [] 'all'|User selected| 'none' (default)
-inputs.PEsol.global_theta_y0_max=2.*ones(1,3);                % Maximum allowed values for the initial conditions
-inputs.PEsol.global_theta_y0_min=-1*ones(1,3);
+inputs.PEsol.global_theta_y0_max=1.0*ones(1,3);                % Maximum allowed values for the initial conditions
+inputs.PEsol.global_theta_y0_min=0.0001*ones(1,3);
 %=============================================================
 % COST FUNCTION RELATED DATA
 % SOLVING THE PROBLEM WITH WEIGHTED LEAST SQUARES FUNCTION

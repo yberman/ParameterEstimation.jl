@@ -21,7 +21,7 @@ inputs.model.par_names=char('k1','k2','k3');             % Names of the paramete
 %inputs.model.stimulus_names=char('light');  % Names of the stimuli
 inputs.model.eqns=char('dr = k1*r-k2*r*w;', 'dw = k2*r*w-k3*w;');                                 % Equations describing system dynamics.
                             %Time derivatives are regarded 'd'st_name''
-inputs.model.par = [0.02 0.03 0.05];         % Nominal value for the parameters
+inputs.model.par = [0.25, 0.5, 0.75];         % Nominal value for the parameters
 % inputs.model.AMIGOsensrhs = 1;                       % Generate the sensitivity equations for exact
 %                                                      % Jacobian computation
 %==================================
@@ -30,7 +30,7 @@ inputs.model.par = [0.02 0.03 0.05];         % Nominal value for the parameters
 % EXPERIMENT DESIGN
 inputs.exps.n_exp=1;                          % Number of experiments
 % EXPERIMENT 1
-inputs.exps.exp_y0{1}=[100 100];        % Initial conditions
+inputs.exps.exp_y0{1}=[0.333, 0.667];        % Initial conditions
 inputs.exps.t_f{1}=1;                       % Experiments duration
 inputs.exps.n_obs{1}=1;                       % Number of observables
 inputs.exps.obs_names{1}=char('Y'); % Names of the observables
@@ -38,26 +38,27 @@ inputs.exps.obs{1}=char('Y=r');
 inputs.exps.t_con{1}=[0 1];                 % Input swithching times including:
 inputs.exps.n_s{1}=20;
 inputs.exps.data_type='real';
-inputs.exps.exp_data{1}=[100.0
-84.44821610166392
-69.64346022199445
-56.18699286738116
-44.458914019523824
-34.60397997464834
-26.572870339935523
-20.188824454149156
-15.212779156604443
-11.39256727297336
-8.493163414509306
-6.311293977979305
-4.679566847222475
-3.464688427848403
-2.5629783933168175
-1.895115281010932
-1.4011217095916941
-1.0360221477945424
-0.7662870925577698
-0.5670214463059633
+inputs.exps.exp_data{1}=[
+0.333
+0.3316282614020498
+0.3304350721719253
+0.3294134908025164
+0.328557030173287
+0.3278596264070244
+0.32731561008348153
+0.3269196796331206
+0.32666687673942313
+0.3265525635894975
+0.32657240180958946
+0.3267223329570144
+0.32699856048605047
+0.3273975330314192
+0.32791592890209653
+0.3285506416692209
+0.32929876686968007
+0.3301575896529297
+0.3311245732331735
+0.3321973482413906
 ];
 
 inputs.ivpsol.rtol=1.0e-12;                            % [] IVP solver integration tolerances
@@ -65,8 +66,8 @@ inputs.ivpsol.atol=1.0e-12;
 
 inputs.PEsol.id_global_theta=char('k1', 'k2', 'k3');
 inputs.PEsol.id_global_theta_y0='all';               % [] 'all'|User selected| 'none' (default)
-inputs.PEsol.global_theta_y0_max=[110 110];                % Maximum allowed values for the initial conditions
-inputs.PEsol.global_theta_y0_min=[90 90];
+inputs.PEsol.global_theta_y0_max=[1 1];                % Maximum allowed values for the initial conditions
+inputs.PEsol.global_theta_y0_min=[0.0001 0.0001];
 inputs.PEsol.global_theta_max=1.*ones(1,3);
 inputs.PEsol.global_theta_min=0.0001.*ones(1,3);
 %=============================================================
