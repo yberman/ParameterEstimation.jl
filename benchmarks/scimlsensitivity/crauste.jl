@@ -34,27 +34,26 @@ parameters = [
                          ], t, states, parameters)
 measured_quantities = [y1 ~ N, y2 ~ E, y3 ~ S + M, y4 ~ P]
 
-ic = SA[1.0, 1.0, 1.0, 1.0, 1.0]
+ic = SA[0.167, 0.333, 0.5, 0.667, 0.833]
 time_interval = [0.0, 1.0]
 datasize = 20
 sampling_times = range(time_interval[1], time_interval[2], length = datasize)
 
-p_true = [1, 1.3, 1.1, 1.2, 1.1, 1, 0.5, 1.0, 1.0, 1.0, 1.0, 0.9, 1.2] # True Parameters
+p_true = [0.071, 0.143, 0.214, 0.286, 0.357, 0.429, 0.5, 0.571, 0.643, 0.714, 0.786, 0.857, 0.929] # True Parameters
 prob_true = ODEProblem{false}(model, ic, time_interval, p_true)
 solution_true = solve(prob_true, solver, p = p_true, saveat = sampling_times;
-                      abstol = 1e-10, reltol = 1e-10)
+                      abstol = 1e-12, reltol = 1e-12)
 data_sample = Dict(v.rhs => solution_true[v.rhs] for v in measured_quantities)
 
-p_rand = rand(Uniform(0.5, 1.5), length(ic) + length(p_true)) # Random Parameters
-prob = ODEProblem{false}(model, ic, time_interval,
-                  p_rand)
+p_rand = rand(Uniform(0.0, 1.0), length(ic) + length(p_true)) # Random Parameters
+prob = ODEProblem{false}(model, ic, time_interval, p_rand)
 # sol = solve(remake(prob, u0 = p[1:length(ic)]), solver, p = p_rand[(length(ic) + 1):end],
 # saveat = sampling_times)
 
 function loss(p)
     sol = solve(remake(prob; u0 = SVector{5}(p[1:length(ic)])), Tsit5(), p = p[(length(ic) + 1):end],
                 saveat = sampling_times;
-                abstol = 1e-10, reltol = 1e-10)
+                abstol = 1e-12, reltol = 1e-12)
     data_true = [data_sample[v.rhs] for v in measured_quantities]
     data = [(sol[1, :]), (sol[2, :]), (sol[3, :] .+ sol[4, :]), (sol[5, :])]
     if sol.retcode == ReturnCode.Success

@@ -18,30 +18,25 @@ measured_quantities = [
     y2 ~ x2,
 ]
 
-ic = SA[1.0, 1.0]
-p_true = [9.8, 1.3]
-time_interval = [0.0, 2.0 * pi * sqrt(1.3 / 9.8)]
+ic = SA[0.333, 0.667]
+p_true = [0.333, 0.667]
+time_interval = [0.0, 1.0]
 datasize = 20
 sampling_times = range(time_interval[1], time_interval[2], length = datasize)
 
 prob_true = ODEProblem{false}(model, ic, time_interval, p_true)
 solution_true = solve(prob_true, solver, p = p_true, saveat = sampling_times;
-                      abstol = 1e-10, reltol = 1e-10)
+                      abstol = 1e-12, reltol = 1e-12)
 
 data_sample = Dict(v.rhs => solution_true[v.rhs] for v in measured_quantities)
 
-p_rand = rand(Uniform(0.5, 1.5), length(ic) + length(p_true)) # Random Parameters
+p_rand = rand(Uniform(0.0, 1.0), length(ic) + length(p_true)) # Random Parameters
 prob = ODEProblem{false}(model, ic, time_interval,
                   p_rand)
-sol = solve(remake(prob, u0 = SVector{2}(p_rand[1:length(ic)])), solver,
-            p = p_rand[(length(ic) + 1):end],
-            saveat = sampling_times;
-            abstol = 1e-10, reltol = 1e-10)
-
 function loss(p)
     sol = solve(remake(prob; u0 = SVector{2}(p[1:length(ic)])), Tsit5(), p = p[(length(ic) + 1):end],
                 saveat = sampling_times;
-                abstol = 1e-10, reltol = 1e-10)
+                abstol = 1e-12, reltol = 1e-12)
     data_true = [data_sample[v.rhs] for v in measured_quantities]
     data = [vcat(sol[1, :]), vcat(sol[2, :])]
     if sol.retcode == ReturnCode.Success
@@ -65,39 +60,39 @@ adtype = Optimization.AutoForwardDiff()
 optf = Optimization.OptimizationFunction((x, p) -> loss(x), adtype)
 optprob = Optimization.OptimizationProblem(optf, p_rand)
 
-result_ode = Optimization.solve(optprob, PolyOpt(), callback = callback, maxiters = 1000)
+@time result_ode = Optimization.solve(optprob, PolyOpt(), callback = callback, maxiters = 1000)
 
-# println(result_ode.u)
+println(result_ode.u)
 
-# all_params = vcat(ic, p_true)
-# println("Max. relative abs. error between true and estimated parameters:",
-#         maximum(abs.((result_ode.u .- all_params) ./ (all_params))))
-
-num_unknowns = length(ic) + length(p_true)
 all_params = vcat(ic, p_true)
-using OrderedCollections
-size_err_map = OrderedDict{Int, Float64}()
-for datasize in 3:21
-    sampling_times = range(time_interval[1], time_interval[2], length = datasize)
+println("Max. relative abs. error between true and estimated parameters:",
+         maximum(abs.((result_ode.u .- all_params) ./ (all_params))))
 
-    solution_true = solve(prob_true, solver, p = p_true, saveat = sampling_times)
-    data_sample = Dict(v.rhs => solution_true[v.rhs] for v in measured_quantities)
-    p_rand = rand(Uniform(0.5, 1.5), num_unknowns) # Random Parameters
-    prob = ODEProblem(model, ic, time_interval,
-                      p_rand)
-    optprob = Optimization.OptimizationProblem(optf, p_rand)
-    result_ode = p_rand
-    try
-        result_ode = Optimization.solve(optprob, PolyOpt(), callback = callback,
-                                        maxiters = 1000)
-    catch
-        result_ode = p_rand # in case of failure use random parameters as answer
-    end
-    size_err_map[datasize] = maximum(100 *
-                                     abs.((result_ode .- all_params) ./ (all_params)))
-end
-open("simple_t_$(time_interval[1])_$(time_interval[2]).txt", "w") do f
-    for (k, v) in size_err_map
-        println(f, "$k $v")
-    end
-end
+# num_unknowns = length(ic) + length(p_true)
+# all_params = vcat(ic, p_true)
+# using OrderedCollections
+# size_err_map = OrderedDict{Int, Float64}()
+# for datasize in 3:21
+#     sampling_times = range(time_interval[1], time_interval[2], length = datasize)
+# 
+#     solution_true = solve(prob_true, solver, p = p_true, saveat = sampling_times)
+#     data_sample = Dict(v.rhs => solution_true[v.rhs] for v in measured_quantities)
+#     p_rand = rand(Uniform(0.5, 1.5), num_unknowns) # Random Parameters
+#     prob = ODEProblem(model, ic, time_interval,
+#                       p_rand)
+#     optprob = Optimization.OptimizationProblem(optf, p_rand)
+#     result_ode = p_rand
+#     try
+#         result_ode = Optimization.solve(optprob, PolyOpt(), callback = callback,
+#                                         maxiters = 1000)
+#     catch
+#         result_ode = p_rand # in case of failure use random parameters as answer
+#     end
+#     size_err_map[datasize] = maximum(100 *
+#                                      abs.((result_ode .- all_params) ./ (all_params)))
+# end
+# open("simple_t_$(time_interval[1])_$(time_interval[2]).txt", "w") do f
+#     for (k, v) in size_err_map
+#         println(f, "$k $v")
+#     end
+# end
