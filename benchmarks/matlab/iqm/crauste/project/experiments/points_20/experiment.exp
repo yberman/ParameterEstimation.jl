@@ -5,19 +5,19 @@ CRAUSTE
 CRAUSTE model
 
 ********** EXPERIMENT INITIAL PARAMETER AND STATE SETTINGS
-mu_N = 1.0
-mu_EE = 1.0
-mu_LE = 1.0
-mu_LL = 1.0
-mu_M = 1.1
-mu_P = 1.0
-mu_PE = 0.8
-mu_PL = 1.2
-delta_NE = 1.0
-delta_EL = 1.0
-delta_LM = 1.0
-rho_E = 0.9
-rho_P = 1.2
+mu_N = 0.4
+mu_EE = 0.4
+mu_LE = 0.4
+mu_LL = 0.4
+mu_M = 0.4
+mu_P = 0.4
+mu_PE = 0.4
+mu_PL = 0.4
+delta_NE = 0.4
+delta_EL = 0.4
+delta_LM = 0.4
+rho_E = 0.4
+rho_P = 0.4
 N(0)=0.8
 E(0)=0.8
 S(0)=0.8

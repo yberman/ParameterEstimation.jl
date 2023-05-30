@@ -12,9 +12,9 @@ d/dt(r) = k1 * r - k2 * r * w
 d/dt(w) = k2 * r * w - k3 * w
 
 ********** MODEL PARAMETERS
-k1 = 0.01
-k2 = 0.02
-k3 = 0.03
+k1 = 0.25
+k2 = 0.5
+k3 = 0.75
 
 ********** MODEL VARIABLES
 

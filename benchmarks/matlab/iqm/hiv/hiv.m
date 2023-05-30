@@ -25,16 +25,16 @@ IQMcomparemeasurements(lv);
 % Global parameters
 % Names         Lower bounds  Upper bounds
 paramdata = {
-    'lm'  0.0 0.5
-    'd'  0.0 0.5
-    'beta'  0.0 0.5
-    'a'  0.0 0.5
-    'k'  0.0 0.5
-    'u'  0.0 0.5
-    'c'  0.0 0.5
-    'q'  0.0 0.5
-    'b'  0.0 0.5
-    'h'  0.0 0.5
+    'lm'  0.0 1.0
+    'd'  0.0 1.0
+    'beta'  0.0 1.0
+    'a'  0.0 1.0
+    'k'  0.0 1.0
+    'u'  0.0 1.0
+    'c'  0.0 1.0
+    'q'  0.0 1.0
+    'b'  0.0 1.0
+    'h'  0.0 1.0
 };
 
 % Local (experiment dependend) parameters
@@ -45,11 +45,11 @@ paramdatalocal = {
 % Initial conditions (always experiment dependend)
 % Names         Lower bounds  Upper bounds
 icdata = {
- 'x' 0.5 1.5
- 'y' 0.5 1.5
- 'v' 0.5 1.5
- 'w' 0.5 1.5
- 'z' 0.5 1.5
+ 'x' 0.0 1.0
+ 'y' 0.0 1.0
+ 'v' 0.0 1.0
+ 'w' 0.0 1.0
+ 'z' 0.0 1.0
 };
 
 
@@ -58,7 +58,7 @@ estimation = [];
 
 % Model and experiment settings
 estimation.modelindex = 1;
-estimation.experiments.indices = [3];%, 2, 3, 4];
+estimation.experiments.indices = [1];%, 2, 3, 4];
 estimation.experiments.weight = [1];%, 1, 1, 1];
 
 % Optimization settings

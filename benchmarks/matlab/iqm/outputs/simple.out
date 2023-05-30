@@ -1,8 +1,8 @@
 [?1h=
-                                                < M A T L A B (R) >
-                                      Copyright 1984-2022 The MathWorks, Inc.
-                                     R2022a (9.12.0.1884302) 64-bit (glnxa64)
-                                                 February 16, 2022
+                                                    < M A T L A B (R) >
+                                          Copyright 1984-2022 The MathWorks, Inc.
+                                          R2022a (9.12.0.1884302) 64-bit (glnxa64)
+                                                     February 16, 2022
 
  
 To get started, type doc.
@@ -759,8 +759,6 @@ Model 1: model
 ---EXPERIMENTS------------------------------------------------
 Experiment 1: 
 	Measurement 1: Simple
-Experiment 2: 
-	Measurement 1: Simple
 ---ESTIMATIONS------------------------------------------------
 0 estimations present
 ==============================================================
@@ -769,459 +767,640 @@ Experiment 2:
 [?1h=[?1h=[?1h=[?1h=[?1h=[?1h=MEX completed successfully.
 [?1h=[?1h=[?1h=Building with 'gcc'.
 [?1h=[?1h=[?1h=[?1h=[?1h=[?1h=MEX completed successfully.
-[?1h=[?1h=[?1h=Building with 'gcc'.
-[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=MEX completed successfully.
  Nr Iter    Nr Fun Eval         Min function          Algorithm Step
-     0            1                366.398            initial guess
-     1            5                365.475            initial simplex
-     2            7                362.968            extrapolation
-     3            8                362.968            reflection
-     4            9                362.968            reflection
-     5           11                359.734            extrapolation
-     6           13                357.141            extrapolation
-     7           14                357.141            reflection
-     8           16                353.002            extrapolation
-     9           18                 348.43            extrapolation
-    10           19                 348.43            reflection
-    11           21                344.341            extrapolation
-    12           22                344.341            reflection
-    13           23                344.341            reflection
-    14           24                344.341            reflection
-    15           26                344.341            one dimensional contraction
-    16           27                344.341            reflection
-    17           29                344.178            extrapolation
-    18           31                343.738            extrapolation
-    19           32                343.738            reflection
-    20           34                343.157            extrapolation
-
-[CVODES WARNING]  CVode
-  Internal t = 0 and h = 0 are such that t + h = t on the next step. The solver will continue anyway.
-
-
-[CVODES ERROR]  CVode
-  At t = 0 and h = 0, the corrector convergence test failed repeatedly or with |h| = hmin.
-
-    21           36                 342.59            reflection
-
-[CVODES WARNING]  CVode
-  Internal t = 0 and h = 0 are such that t + h = t on the next step. The solver will continue anyway.
-
-
-[CVODES ERROR]  CVode
-  At t = 0 and h = 0, the corrector convergence test failed repeatedly or with |h| = hmin.
-
-    22           38                340.004            reflection
-
-[CVODES WARNING]  CVode
-  Internal t = 0 and h = 0 are such that t + h = t on the next step. The solver will continue anyway.
-
-
-[CVODES ERROR]  CVode
-  At t = 0 and h = 0, the corrector convergence test failed repeatedly or with |h| = hmin.
-
-    23           40                338.722            reflection
-
-[CVODES WARNING]  CVode
-  Internal t = 0 and h = 0 are such that t + h = t on the next step. The solver will continue anyway.
-
-
-[CVODES ERROR]  CVode
-  At t = 0 and h = 0, the corrector convergence test failed repeatedly or with |h| = hmin.
-
-
-[CVODES WARNING]  CVode
-  Internal t = 0 and h = 0 are such that t + h = t on the next step. The solver will continue anyway.
-
-
-[CVODES ERROR]  CVode
-  At t = 0 and h = 0, the corrector convergence test failed repeatedly or with |h| = hmin.
-
-    24           45                338.299            contraction around best point
-
-[CVODES WARNING]  CVode
-  Internal t = 0 and h = 0 are such that t + h = t on the next step. The solver will continue anyway.
-
-
-[CVODES ERROR]  CVode
-  At t = 0 and h = 0, the corrector convergence test failed repeatedly or with |h| = hmin.
-
-
-[CVODES WARNING]  CVode
-  Internal t = 0 and h = 0 are such that t + h = t on the next step. The solver will continue anyway.
-
-
-[CVODES ERROR]  CVode
-  At t = 0 and h = 0, the corrector convergence test failed repeatedly or with |h| = hmin.
-
-    25           50                337.142            contraction around best point
-
-[CVODES WARNING]  CVode
-  Internal t = 0 and h = 0 are such that t + h = t on the next step. The solver will continue anyway.
-
-
-[CVODES ERROR]  CVode
-  At t = 0 and h = 0, the corrector convergence test failed repeatedly or with |h| = hmin.
-
-    26           52                337.142            one dimensional contraction
-    27           54                337.142            one dimensional contraction
-    28           56                337.142            one dimensional contraction
-    29           58                337.142            one dimensional contraction
-    30           60                337.142            one dimensional contraction
-    31           61                337.142            reflection
-    32           63                337.142            one dimensional contraction
-    33           68                336.951            contraction around best point
-    34           70                336.951            one dimensional contraction
-    35           72                336.951            one dimensional contraction
-    36           73                336.951            reflection
-    37           75                336.951            one dimensional contraction
-    38           76                336.951            reflection
-    39           78                336.893            extrapolation
-    40           79                336.893            reflection
-    41           81                336.849            extrapolation
-    42           82                336.849            reflection
-    43           84                336.766            extrapolation
-    44           85                336.766            reflection
-    45           87                336.594            extrapolation
-    46           88                336.594            reflection
-    47           89                336.594            reflection
-    48           91                336.264            extrapolation
-    49           92                336.264            reflection
-    50           94                 336.09            extrapolation
-    51           96                335.633            extrapolation
-    52           98                334.895            extrapolation
-    53           99                334.895            reflection
-    54          101                333.746            extrapolation
-    55          103                332.283            extrapolation
-    56          104                332.283            reflection
-    57          106                329.254            extrapolation
-    58          108                 325.02            extrapolation
-    59          109                 325.02            reflection
-    60          111                318.002            extrapolation
-    61          113                 304.78            extrapolation
-    62          114                 304.78            reflection
-    63          116                284.741            extrapolation
-    64          118                244.159            extrapolation
-    65          119                244.159            reflection
-    66          121                183.915            extrapolation
-    67          123                87.3508            extrapolation
-    68          124                87.3508            reflection
-    69          126                39.8443            extrapolation
-    70          128                28.5124            extrapolation
-    71          129                28.5124            reflection
-    72          130                28.5124            reflection
-    73          132                28.5124            one dimensional contraction
-    74          133                28.5124            reflection
-    75          135                28.5124            one dimensional contraction
-    76          136                28.5124            reflection
-    77          138                28.5124            one dimensional contraction
-    78          140                24.8882            reflection
-    79          145                23.7275            contraction around best point
-    80          147                23.7275            one dimensional contraction
-    81          148                23.7275            reflection
-    81          148                17.5011            initial simplex
-    82          150                15.2277            reflection
-    83          152                  14.54            extrapolation
-    84          154                13.9647            reflection
-    85          156                13.9647            one dimensional contraction
-    86          158                13.9647            one dimensional contraction
-    87          159                13.9647            reflection
-    88          161                13.9248            one dimensional contraction
-    89          162                13.9248            reflection
-    90          163                13.9248            reflection
-    91          165                13.6626            one dimensional contraction
-    92          170                13.5792            contraction around best point
-    93          172                13.5792            one dimensional contraction
-    94          174                13.4926            reflection
-    95          176                13.4142            extrapolation
-    96          177                13.4142            reflection
-    97          179                13.4142            one dimensional contraction
-    98          181                 13.111            extrapolation
-    99          182                 13.111            reflection
-   100          183                 13.111            reflection
-   101          185                12.9981            reflection
-   102          187                12.8768            reflection
-   103          188                12.8768            reflection
-   104          190                12.8325            reflection
-   105          192                12.4641            extrapolation
-   106          193                12.4641            reflection
-   107          195                12.3429            extrapolation
-   108          197                12.0972            extrapolation
-   109          199                11.3088            extrapolation
-   110          200                11.3088            reflection
-   111          202                10.6435            extrapolation
-   112          203                10.6435            reflection
-   113          205                10.1194            extrapolation
-   114          207                 10.097            reflection
-   115          209                9.67564            reflection
-   116          211                9.67564            one dimensional contraction
-   117          213                9.67564            one dimensional contraction
-   118          215                9.67564            one dimensional contraction
-   119          216                9.67564            reflection
-   120          217                9.67564            reflection
-   121          218                9.67564            reflection
-   122          219                9.67564            reflection
-   123          220                9.67564            reflection
-   124          221                9.67564            reflection
-   125          223                9.67564            one dimensional contraction
-   126          224                9.67564            reflection
-   127          226                9.67564            one dimensional contraction
-   128          228                9.66995            reflection
-   129          230                9.66995            one dimensional contraction
-   130          232                9.65371            reflection
-   131          233                9.65371            reflection
-   132          235                9.65371            one dimensional contraction
-   133          237                9.64075            reflection
-   134          242                9.63569            contraction around best point
-   135          244                9.63569            one dimensional contraction
-   136          246                9.63548            reflection
-   137          247                9.63548            reflection
-   138          249                9.63548            one dimensional contraction
-   139          251                9.63548            one dimensional contraction
-   140          252                9.63548            reflection
-   141          253                9.63548            reflection
-   142          255                9.63545            one dimensional contraction
-   143          256                9.63545            reflection
-   144          258                9.63456            one dimensional contraction
-   145          263                9.63444            contraction around best point
-   146          265                9.63444            one dimensional contraction
-   147          267                9.63426            reflection
-   148          268                9.63426            reflection
-   149          273                9.63426            contraction around best point
-   150          275                9.63426            one dimensional contraction
-   151          277                9.63422            reflection
-   152          278                9.63422            reflection
-   153          280                9.63415            extrapolation
-   154          281                9.63415            reflection
-   155          283                9.63412            reflection
-   156          285                9.63412            one dimensional contraction
-   157          286                9.63412            reflection
-   158          288                9.63409            reflection
-   159          289                9.63409            reflection
-   160          291                9.63409            one dimensional contraction
-   161          293                9.63409            one dimensional contraction
-   162          295                9.63409            one dimensional contraction
-   163          297                9.63409            extrapolation
-   164          298                9.63409            reflection
-   165          299                9.63409            reflection
-   166          300                9.63409            reflection
-   167          302                9.63409            one dimensional contraction
-   168          307                9.63408            contraction around best point
-   169          309                9.63408            one dimensional contraction
-   170          310                9.63408            reflection
-   171          311                9.63408            reflection
-   172          313                9.63408            reflection
-   173          314                9.63408            reflection
-   174          319                9.63408            contraction around best point
-   175          321                9.63408            one dimensional contraction
-   176          323                9.63408            reflection
-   177          324                9.63408            reflection
-   178          325                9.63408            reflection
-   179          327                9.63408            reflection
-   180          329                9.63408            reflection
-   181          330                9.63408            reflection
-   182          332                9.63408            one dimensional contraction
-   183          333                9.63408            reflection
-   184          335                9.63408            reflection
-   185          336                9.63408            reflection
-   186          338                9.63408            one dimensional contraction
-   187          343                9.63408            contraction around best point
-   188          345                9.63408            one dimensional contraction
-   189          347                9.63408            reflection
-   190          348                9.63408            reflection
-   191          350                9.63408            reflection
-   192          351                9.63408            reflection
-   193          352                9.63408            reflection
-   194          353                9.63408            reflection
-   195          354                9.63408            reflection
-   196          356                9.63408            one dimensional contraction
-   197          358                9.63408            one dimensional contraction
-   198          360                9.63408            reflection
-   199          361                9.63408            reflection
-   200          363                9.63408            one dimensional contraction
-   201          368                9.63408            contraction around best point
-   201          368                9.63408            initial simplex
-   202          370                9.63408            one dimensional contraction
-   203          371                9.63408            reflection
-   204          373                9.63408            one dimensional contraction
-   205          374                9.63408            reflection
-   206          376                9.63408            one dimensional contraction
-   207          378                9.63408            one dimensional contraction
-   208          379                9.63408            reflection
-   209          381                9.63408            one dimensional contraction
-   210          383                9.63408            one dimensional contraction
-   211          384                9.63408            reflection
-   212          385                9.63408            reflection
-   213          387                9.63408            one dimensional contraction
-   214          389                9.63408            one dimensional contraction
-   215          390                9.63408            reflection
-   216          392                9.63408            one dimensional contraction
-   217          394                9.63408            one dimensional contraction
-   218          395                9.63408            reflection
-   219          396                9.63408            reflection
-   220          398                9.63408            one dimensional contraction
-   221          400                9.63408            one dimensional contraction
-   222          401                9.63408            reflection
-   223          403                9.63408            one dimensional contraction
-   224          405                9.63408            one dimensional contraction
-   225          406                9.63408            reflection
-   226          407                9.63408            reflection
-   227          409                9.63408            one dimensional contraction
-   228          411                9.63408            one dimensional contraction
-   229          412                9.63408            reflection
-   230          413                9.63408            reflection
-   231          414                9.63408            reflection
-   232          416                9.63408            one dimensional contraction
-   233          418                9.63408            one dimensional contraction
-   234          419                9.63408            reflection
-   235          420                9.63408            reflection
-   236          421                9.63408            reflection
-   237          423                9.63408            one dimensional contraction
-   238          425                9.63408            one dimensional contraction
-   239          426                9.63408            reflection
-   240          427                9.63408            reflection
-   241          429                9.63408            one dimensional contraction
-   242          431                9.63408            one dimensional contraction
-   243          432                9.63408            reflection
-   244          433                9.63408            reflection
-   245          434                9.63408            reflection
-   246          436                9.63408            one dimensional contraction
-   247          438                9.63408            one dimensional contraction
-   248          440                9.63408            one dimensional contraction
-   249          441                9.63408            reflection
-   250          443                9.63408            one dimensional contraction
-   251          445                9.63408            one dimensional contraction
-   252          446                9.63408            reflection
-   253          447                9.63408            reflection
-   254          449                9.63408            one dimensional contraction
-   255          451                9.63408            one dimensional contraction
-   256          452                9.63408            reflection
-   257          454                9.63408            one dimensional contraction
-   258          456                9.63408            one dimensional contraction
-   259          457                9.63408            reflection
-   260          459                9.63408            one dimensional contraction
-   261          461                9.63408            one dimensional contraction
-   262          462                9.63408            reflection
-   263          464                9.63408            one dimensional contraction
-   264          466                9.63408            one dimensional contraction
-   265          468                9.63408            one dimensional contraction
-   266          469                9.63408            reflection
-   267          471                9.63408            one dimensional contraction
-   268          472                9.63408            reflection
-   269          473                9.63408            reflection
-   270          474                9.63408            reflection
-   271          475                9.63408            reflection
-   272          477                9.63408            one dimensional contraction
-   273          479                9.63408            one dimensional contraction
-   274          480                9.63408            reflection
-   275          482                9.63408            one dimensional contraction
-   276          483                9.63408            reflection
-   277          485                9.63408            one dimensional contraction
-   278          486                9.63408            reflection
-   279          487                9.63408            reflection
-   280          492                9.63408            contraction around best point
-   281          497                9.63408            contraction around best point
-   282          499                9.63408            one dimensional contraction
-   283          501                9.63408            extrapolation
-   284          502                9.63408            reflection
-   285          503                9.63408            reflection
-   286          505                9.63408            reflection
-   287          507                9.63408            reflection
-   288          509                9.63408            reflection
-   289          511                9.63408            one dimensional contraction
-   290          513                9.63408            one dimensional contraction
-   291          518                9.63408            contraction around best point
-   292          520                9.63408            one dimensional contraction
-   293          522                9.63408            reflection
-   294          523                9.63408            reflection
-   295          524                9.63408            reflection
-   296          526                9.63408            reflection
-   297          528                9.63408            reflection
-   298          530                9.63408            one dimensional contraction
-   299          531                9.63408            reflection
-   300          533                9.63408            one dimensional contraction
-   301          535                9.63408            one dimensional contraction
-   302          537                9.63408            one dimensional contraction
-   303          538                9.63408            reflection
-   304          540                9.63408            one dimensional contraction
-   305          541                9.63408            reflection
-   306          542                9.63408            reflection
-   307          544                9.63408            one dimensional contraction
-   308          545                9.63408            reflection
-   309          546                9.63408            reflection
-   310          548                9.63408            one dimensional contraction
-   311          553                9.63408            contraction around best point
-   312          555                9.63408            one dimensional contraction
-   313          556                9.63408            reflection
-   314          558                9.63408            reflection
-   315          559                9.63408            reflection
-   316          560                9.63408            reflection
-   317          565                9.63408            contraction around best point
-   318          566                9.63408            reflection
-   319          571                9.63408            contraction around best point
-   320          573                9.63408            one dimensional contraction
-   321          578                9.63408            contraction around best point
-   322          583                9.63408            contraction around best point
-   323          584                9.63408            reflection
-   324          589                9.63408            contraction around best point
-   325          591                9.63408            one dimensional contraction
-   326          596                9.63408            contraction around best point
-   327          598                9.63408            one dimensional contraction
-   328          603                9.63408            contraction around best point
-   329          608                9.63408            contraction around best point
-   330          609                9.63408            reflection
-   331          610                9.63408            reflection
-   332          611                9.63408            reflection
-   333          616                9.63408            contraction around best point
-   334          617                9.63408            reflection
-   335          622                9.63408            contraction around best point
-   336          624                9.63408            one dimensional contraction
-   337          626                9.63408            reflection
-   338          627                9.63408            reflection
-   339          629                9.63408            one dimensional contraction
-   340          630                9.63408            reflection
-   341          635                9.63408            contraction around best point
-   342          636                9.63408            reflection
-   343          638                9.63408            one dimensional contraction
-   344          643                9.63408            contraction around best point
+     0            1               0.413499            initial guess
+     1            5               0.387244            initial simplex
+     2            7               0.211141            extrapolation
+     3            8               0.211141            reflection
+     4            9               0.211141            reflection
+     5           11               0.100276            extrapolation
+     6           13               0.012116            extrapolation
+     7           14               0.012116            reflection
+     8           15               0.012116            reflection
+     9           16               0.012116            reflection
+    10           18               0.012116            one dimensional contraction
+    11           20               0.012116            one dimensional contraction
+    12           25               0.012116            contraction around best point
+    13           27               0.012116            one dimensional contraction
+    14           29             0.00948334            reflection
+    15           31             0.00881845            reflection
+    16           32             0.00881845            reflection
+    17           34             0.00500131            extrapolation
+    18           36             0.00500131            one dimensional contraction
+    19           37             0.00500131            reflection
+    20           38             0.00500131            reflection
+    21           40             0.00208719            extrapolation
+    22           42            0.000881257            extrapolation
+    23           43            0.000881257            reflection
+    24           45            0.000672332            reflection
+    25           46            0.000672332            reflection
+    26           48            0.000672332            one dimensional contraction
+    27           50            0.000672332            one dimensional contraction
+    28           52            0.000581804            reflection
+    29           54            0.000581804            one dimensional contraction
+    30           56            0.000581804            one dimensional contraction
+    31           61            0.000499018            contraction around best point
+    32           66            0.000496057            contraction around best point
+    33           68            0.000496057            one dimensional contraction
+    34           70            0.000341592            extrapolation
+    35           71            0.000341592            reflection
+    36           72            0.000341592            reflection
+    37           74            0.000228998            extrapolation
+    38           75            0.000228998            reflection
+    39           76            0.000228998            reflection
+    40           77            0.000228998            reflection
+    41           79            0.000228998            one dimensional contraction
+    42           80            0.000228998            reflection
+    43           81            0.000228998            reflection
+    44           82            0.000228998            reflection
+    45           84            0.000228998            one dimensional contraction
+    46           85            0.000228998            reflection
+    47           87            0.000217465            reflection
+    48           89            0.000217465            one dimensional contraction
+    49           90            0.000217465            reflection
+    50           95            0.000213329            contraction around best point
+    51           97            0.000213329            one dimensional contraction
+    52           98            0.000213329            reflection
+    53          100            0.000205205            extrapolation
+    54          102             0.00019681            extrapolation
+    55          103             0.00019681            reflection
+    56          104             0.00019681            reflection
+    57          105             0.00019681            reflection
+    58          107             0.00018295            extrapolation
+    59          108             0.00018295            reflection
+    60          109             0.00018295            reflection
+    61          111            0.000177558            reflection
+    62          113            0.000153874            extrapolation
+    63          115            0.000153874            one dimensional contraction
+    64          116            0.000153874            reflection
+    65          117            0.000153874            reflection
+    66          119            0.000145758            extrapolation
+    67          120            0.000145758            reflection
+    68          122            0.000113664            extrapolation
+    69          123            0.000113664            reflection
+    70          124            0.000113664            reflection
+    71          126            0.000104268            extrapolation
+    72          127            0.000104268            reflection
+    73          129            7.24819e-05            extrapolation
+    74          131            6.48919e-05            extrapolation
+    75          132            6.48919e-05            reflection
+    76          134            6.28422e-05            reflection
+    77          136            5.49477e-05            reflection
+    78          141             5.1975e-05            contraction around best point
+    79          143             5.1975e-05            one dimensional contraction
+    80          145            4.89579e-05            reflection
+    81          146            4.89579e-05            reflection
+    81          146            4.89579e-05            initial simplex
+    82          148            4.89579e-05            one dimensional contraction
+    83          149            4.89579e-05            reflection
+    84          151            4.89579e-05            one dimensional contraction
+    85          153            4.89579e-05            one dimensional contraction
+    86          154            4.89579e-05            reflection
+    87          156            4.89579e-05            one dimensional contraction
+    88          158            4.89579e-05            one dimensional contraction
+    89          159            4.89579e-05            reflection
+    90          160            4.89579e-05            reflection
+    91          162            4.89579e-05            one dimensional contraction
+    92          167            4.03736e-05            contraction around best point
+    93          169            4.03736e-05            one dimensional contraction
+    94          171            3.45364e-05            reflection
+    95          173            3.45364e-05            one dimensional contraction
+    96          175            3.45364e-05            one dimensional contraction
+    97          176            3.45364e-05            reflection
+    98          177            3.45364e-05            reflection
+    99          179            2.92293e-05            reflection
+   100          180            2.92293e-05            reflection
+   101          182            2.64498e-05            reflection
+   102          184            2.64498e-05            one dimensional contraction
+   103          186            2.18745e-05            extrapolation
+   104          187            2.18745e-05            reflection
+   105          188            2.18745e-05            reflection
+   106          190            9.85354e-06            extrapolation
+   107          191            9.85354e-06            reflection
+   108          193            9.85354e-06            one dimensional contraction
+   109          195            9.85354e-06            one dimensional contraction
+   110          196            9.85354e-06            reflection
+   111          197            9.85354e-06            reflection
+   112          199            8.88723e-06            reflection
+   113          201            5.81529e-06            reflection
+   114          202            5.81529e-06            reflection
+   115          204            4.34589e-06            reflection
+   116          205            4.34589e-06            reflection
+   117          206            4.34589e-06            reflection
+   118          208            1.68495e-06            reflection
+   119          209            1.68495e-06            reflection
+   120          210            1.68495e-06            reflection
+   121          211            1.68495e-06            reflection
+   122          213            3.37548e-07            reflection
+   123          214            3.37548e-07            reflection
+   124          216            3.37548e-07            one dimensional contraction
+   125          218            3.37548e-07            one dimensional contraction
+   126          220            3.37548e-07            one dimensional contraction
+   127          221            3.37548e-07            reflection
+   128          223            3.37548e-07            one dimensional contraction
+   129          224            3.37548e-07            reflection
+   130          226            3.37548e-07            one dimensional contraction
+   131          227            3.37548e-07            reflection
+   132          229            1.53504e-07            reflection
+   133          231            1.53504e-07            one dimensional contraction
+   134          233            1.53504e-07            one dimensional contraction
+   135          235            1.53504e-07            one dimensional contraction
+   136          237            1.42479e-07            one dimensional contraction
+   137          239             6.2441e-08            reflection
+   138          241             6.2441e-08            one dimensional contraction
+   139          243             6.2441e-08            one dimensional contraction
+   140          245             6.2441e-08            one dimensional contraction
+   141          246             6.2441e-08            reflection
+   142          251            5.94036e-08            contraction around best point
+   143          253            5.94036e-08            one dimensional contraction
+   144          255            4.09735e-08            reflection
+   145          257            2.23341e-08            extrapolation
+   146          258            2.23341e-08            reflection
+   147          259            2.23341e-08            reflection
+   148          261            1.13744e-08            reflection
+   149          262            1.13744e-08            reflection
+   150          264            2.14593e-09            reflection
+   151          265            2.14593e-09            reflection
+   152          266            2.14593e-09            reflection
+   153          268            2.14593e-09            one dimensional contraction
+   154          270            2.14593e-09            one dimensional contraction
+   155          271            2.14593e-09            reflection
+   156          272            2.14593e-09            reflection
+   157          274            2.14593e-09            one dimensional contraction
+   158          275            2.14593e-09            reflection
+   159          277            2.14593e-09            one dimensional contraction
+   160          279            2.14593e-09            one dimensional contraction
+   161          280            2.14593e-09            reflection
+   162          281            2.14593e-09            reflection
+   163          283            1.60576e-09            reflection
+   164          284            1.60576e-09            reflection
+   165          285            1.60576e-09            reflection
+   166          287            2.14464e-10            reflection
+   167          289            2.14464e-10            one dimensional contraction
+   168          290            2.14464e-10            reflection
+   169          292            2.14464e-10            one dimensional contraction
+   170          293            2.14464e-10            reflection
+   171          294            2.14464e-10            reflection
+   172          296            2.14464e-10            one dimensional contraction
+   173          298            2.14464e-10            one dimensional contraction
+   174          300            2.14464e-10            one dimensional contraction
+   175          302            1.08958e-10            reflection
+   176          304            1.08958e-10            one dimensional contraction
+   177          306            1.08958e-10            one dimensional contraction
+   178          308            1.08958e-10            one dimensional contraction
+   179          310            1.08958e-10            one dimensional contraction
+   180          312            7.92123e-11            reflection
+   181          314            2.21426e-11            reflection
+   182          315            2.21426e-11            reflection
+   183          316            2.21426e-11            reflection
+   184          318            2.21426e-11            one dimensional contraction
+   185          319            2.21426e-11            reflection
+   186          321            2.21426e-11            one dimensional contraction
+   187          323            2.01669e-11            one dimensional contraction
+   188          328            9.18739e-12            contraction around best point
+   189          330            9.18739e-12            one dimensional contraction
+   190          332            6.59099e-12            reflection
+   191          334             4.9479e-12            reflection
+   192          335             4.9479e-12            reflection
+   193          337             4.9479e-12            one dimensional contraction
+   194          339            4.06489e-12            reflection
+   195          341            3.05149e-12            reflection
+   196          342            3.05149e-12            reflection
+   197          344            2.51767e-12            reflection
+   198          346            2.24434e-12            reflection
+   199          351            9.47049e-13            contraction around best point
+   200          353            9.47049e-13            one dimensional contraction
+   201          355            6.58163e-13            reflection
+   201          355            6.58163e-13            initial simplex
+   202          357            6.58163e-13            one dimensional contraction
+   203          358            6.58163e-13            reflection
+   204          360            6.58163e-13            one dimensional contraction
+   205          362            6.58163e-13            one dimensional contraction
+   206          363            6.58163e-13            reflection
+   207          365            6.58163e-13            one dimensional contraction
+   208          367            6.58163e-13            one dimensional contraction
+   209          368            6.58163e-13            reflection
+   210          369            6.58163e-13            reflection
+   211          371            6.58163e-13            one dimensional contraction
+   212          372            6.58163e-13            reflection
+   213          374            6.58163e-13            one dimensional contraction
+   214          376            6.58163e-13            one dimensional contraction
+   215          377            6.58163e-13            reflection
+   216          378            6.58163e-13            reflection
+   217          383            6.58163e-13            contraction around best point
+   218          385            6.58163e-13            one dimensional contraction
+   219          386            6.58163e-13            reflection
+   220          387            6.58163e-13            reflection
+   221          389            6.58163e-13            one dimensional contraction
+   222          391            6.58163e-13            one dimensional contraction
+   223          393            6.58163e-13            one dimensional contraction
+   224          395            6.58163e-13            one dimensional contraction
+   225          396            6.58163e-13            reflection
+   226          397            6.58163e-13            reflection
+   227          398            6.58163e-13            reflection
+   228          400            6.58163e-13            one dimensional contraction
+   229          402            6.58163e-13            one dimensional contraction
+   230          403            6.58163e-13            reflection
+   231          404            6.58163e-13            reflection
+   232          405            6.58163e-13            reflection
+   233          407            6.58163e-13            one dimensional contraction
+   234          408            6.58163e-13            reflection
+   235          409            6.58163e-13            reflection
+   236          411            6.58163e-13            one dimensional contraction
+   237          413            6.58163e-13            one dimensional contraction
+   238          414            6.58163e-13            reflection
+   239          416            6.58163e-13            one dimensional contraction
+   240          417            6.58163e-13            reflection
+   241          418            6.58163e-13            reflection
+   242          419            6.58163e-13            reflection
+   243          421            6.58163e-13            one dimensional contraction
+   244          423            6.58163e-13            one dimensional contraction
+   245          425            6.58163e-13            one dimensional contraction
+   246          426            6.58163e-13            reflection
+   247          427            6.58163e-13            reflection
+   248          429            6.58163e-13            one dimensional contraction
+   249          431            6.58163e-13            one dimensional contraction
+   250          432            6.58163e-13            reflection
+   251          433            6.58163e-13            reflection
+   252          434            6.58163e-13            reflection
+   253          435            6.58163e-13            reflection
+   254          437            6.58163e-13            one dimensional contraction
+   255          438            6.58163e-13            reflection
+   256          440            6.58163e-13            one dimensional contraction
+   257          441            6.58163e-13            reflection
+   258          442            6.58163e-13            reflection
+   259          443            6.58163e-13            reflection
+   260          445            6.58163e-13            one dimensional contraction
+   261          447            6.58163e-13            one dimensional contraction
+   262          448            6.58163e-13            reflection
+   263          449            6.58163e-13            reflection
+   264          450            6.58163e-13            reflection
+   265          452            6.58163e-13            one dimensional contraction
+   266          454            6.58163e-13            one dimensional contraction
+   267          456            6.58163e-13            one dimensional contraction
+   268          458            6.58163e-13            one dimensional contraction
+   269          459            6.58163e-13            reflection
+   270          460            6.58163e-13            reflection
+   271          461            6.58163e-13            reflection
+   272          462            6.58163e-13            reflection
+   273          464            6.58163e-13            one dimensional contraction
+   274          465            6.58163e-13            reflection
+   275          466            6.58163e-13            reflection
+   276          468            6.58163e-13            one dimensional contraction
+   277          469            6.58163e-13            reflection
+   278          470            6.58163e-13            reflection
+   279          471            6.58163e-13            reflection
+   280          473            6.58163e-13            one dimensional contraction
+   281          475            6.58163e-13            one dimensional contraction
+   282          477            6.58163e-13            one dimensional contraction
+   283          478            6.58163e-13            reflection
+   284          479            6.58163e-13            reflection
+   285          480            6.58163e-13            reflection
+   286          482            6.58163e-13            one dimensional contraction
+   287          484            6.58163e-13            one dimensional contraction
+   288          485            6.58163e-13            reflection
+   289          486            6.58163e-13            reflection
+   290          487            6.58163e-13            reflection
+   291          489            6.58163e-13            one dimensional contraction
+   292          491            6.58163e-13            one dimensional contraction
+   293          493            6.58163e-13            one dimensional contraction
+   294          494            6.58163e-13            reflection
+   295          496            6.58163e-13            one dimensional contraction
+   296          497            6.58163e-13            reflection
+   297          499            6.58163e-13            one dimensional contraction
+   298          500            6.58163e-13            reflection
+   299          502            6.58163e-13            one dimensional contraction
+   300          503            6.58163e-13            reflection
+   301          505            6.58163e-13            one dimensional contraction
+   302          506            6.58163e-13            reflection
+   303          507            6.58163e-13            reflection
+   304          508            6.58163e-13            reflection
+   305          510            6.58163e-13            one dimensional contraction
+   306          512            6.58163e-13            one dimensional contraction
+   307          514            6.58163e-13            one dimensional contraction
+   308          515            6.58163e-13            reflection
+   309          517            6.58163e-13            one dimensional contraction
+   310          519            6.58163e-13            one dimensional contraction
+   311          524            6.15905e-13            contraction around best point
+   312          526            6.15905e-13            one dimensional contraction
+   313          528            3.75982e-13            reflection
+   314          530            1.02063e-13            reflection
+   315          531            1.02063e-13            reflection
+   316          532            1.02063e-13            reflection
+   317          534            1.02063e-13            one dimensional contraction
+   318          536            7.16507e-14            one dimensional contraction
+   319          538            7.16507e-14            one dimensional contraction
+   320          540            7.16507e-14            one dimensional contraction
+   321          541            7.16507e-14            reflection
+   322          543            5.08869e-14            one dimensional contraction
+   323          548            3.16078e-14            contraction around best point
+   324          550            3.16078e-14            one dimensional contraction
+   325          552            3.09637e-14            reflection
+   326          554            2.45256e-14            reflection
+   327          556            1.99631e-14            reflection
+   328          558             1.0586e-14            reflection
+   329          559             1.0586e-14            reflection
+   330          561             1.0586e-14            one dimensional contraction
+   331          562             1.0586e-14            reflection
+   332          564            2.35052e-15            reflection
+   333          566            1.49103e-15            reflection
+   334          571             1.3624e-16            contraction around best point
+   335          573             1.3624e-16            one dimensional contraction
+   336          574             1.3624e-16            reflection
+   337          575             1.3624e-16            reflection
+   338          577             1.3624e-16            one dimensional contraction
+   339          578             1.3624e-16            reflection
+   340          579             1.3624e-16            reflection
+   341          581             1.3624e-16            one dimensional contraction
+   342          583             1.3624e-16            one dimensional contraction
+   343          585             1.3624e-16            one dimensional contraction
+   344          586             1.3624e-16            reflection
+   345          587             1.3624e-16            reflection
+   346          588             1.3624e-16            reflection
+   347          590            5.02578e-17            reflection
+   348          592            5.02578e-17            one dimensional contraction
+   349          594            5.02578e-17            one dimensional contraction
+   350          596            5.02578e-17            one dimensional contraction
+   351          598            5.02578e-17            one dimensional contraction
+   352          600            5.02578e-17            one dimensional contraction
+   353          601            5.02578e-17            reflection
+   354          606            4.42812e-17            contraction around best point
+   355          608            4.42812e-17            one dimensional contraction
+   356          610            3.67174e-17            reflection
+   357          612            2.08705e-17            extrapolation
+   358          614             1.7722e-17            reflection
+   359          615             1.7722e-17            reflection
+   360          617            6.64223e-18            reflection
+   361          618            6.64223e-18            reflection
+   362          619            6.64223e-18            reflection
+   363          621            4.54976e-18            reflection
+   364          623            4.54976e-18            one dimensional contraction
+   365          624            4.54976e-18            reflection
+   366          626            4.14145e-18            one dimensional contraction
+   367          628            4.14145e-18            one dimensional contraction
+   368          630            2.22314e-18            reflection
+   369          631            2.22314e-18            reflection
+   370          633            2.22314e-18            one dimensional contraction
+   371          635            1.40483e-18            reflection
+   372          637            1.40483e-18            one dimensional contraction
+   373          639             1.3962e-18            one dimensional contraction
+   374          641             1.3962e-18            one dimensional contraction
+   375          643            1.08757e-18            reflection
+   376          648            9.09608e-19            contraction around best point
+   377          650            9.09608e-19            one dimensional contraction
+   378          652            5.85047e-19            reflection
+   379          653            5.85047e-19            reflection
+   380          655            5.34527e-19            reflection
+   381          657            4.30802e-19            reflection
+   381          657            4.30802e-19            initial simplex
+   382          659            4.30802e-19            one dimensional contraction
+   383          660            4.30802e-19            reflection
+   384          662            4.30802e-19            one dimensional contraction
+   385          664            4.30802e-19            one dimensional contraction
+   386          665            4.30802e-19            reflection
+   387          667            4.30802e-19            one dimensional contraction
+   388          669            4.30802e-19            one dimensional contraction
+   389          670            4.30802e-19            reflection
+   390          671            4.30802e-19            reflection
+   391          673            4.30802e-19            one dimensional contraction
+   392          674            4.30802e-19            reflection
+   393          676            4.30802e-19            one dimensional contraction
+   394          678            4.30802e-19            one dimensional contraction
+   395          679            4.30802e-19            reflection
+   396          680            4.30802e-19            reflection
+   397          685            4.30802e-19            contraction around best point
+   398          687            4.30802e-19            one dimensional contraction
+   399          688            4.30802e-19            reflection
+   400          689            4.30802e-19            reflection
+   401          691            4.30802e-19            one dimensional contraction
+   402          693            4.30802e-19            one dimensional contraction
+   403          695            4.30802e-19            one dimensional contraction
+   404          697            4.30802e-19            one dimensional contraction
+   405          698            4.30802e-19            reflection
+   406          699            4.30802e-19            reflection
+   407          700            4.30802e-19            reflection
+   408          702            4.30802e-19            one dimensional contraction
+   409          704            4.30802e-19            one dimensional contraction
+   410          705            4.30802e-19            reflection
+   411          706            4.30802e-19            reflection
+   412          707            4.30802e-19            reflection
+   413          709            4.30802e-19            one dimensional contraction
+   414          710            4.30802e-19            reflection
+   415          711            4.30802e-19            reflection
+   416          713            4.30802e-19            one dimensional contraction
+   417          715            4.30802e-19            one dimensional contraction
+   418          716            4.30802e-19            reflection
+   419          718            4.30802e-19            one dimensional contraction
+   420          719            4.30802e-19            reflection
+   421          720            4.30802e-19            reflection
+   422          721            4.30802e-19            reflection
+   423          723            4.30802e-19            one dimensional contraction
+   424          725            4.30802e-19            one dimensional contraction
+   425          727            4.30802e-19            one dimensional contraction
+   426          728            4.30802e-19            reflection
+   427          729            4.30802e-19            reflection
+   428          731            4.30802e-19            one dimensional contraction
+   429          733            4.30802e-19            one dimensional contraction
+   430          734            4.30802e-19            reflection
+   431          735            4.30802e-19            reflection
+   432          736            4.30802e-19            reflection
+   433          737            4.30802e-19            reflection
+   434          739            4.30802e-19            one dimensional contraction
+   435          741            4.30802e-19            one dimensional contraction
+   436          742            4.30802e-19            reflection
+   437          743            4.30802e-19            reflection
+   438          744            4.30802e-19            reflection
+   439          745            4.30802e-19            reflection
+   440          746            4.30802e-19            reflection
+   441          748            4.30802e-19            one dimensional contraction
+   442          750            4.30802e-19            one dimensional contraction
+   443          752            4.30802e-19            one dimensional contraction
+   444          753            4.30802e-19            reflection
+   445          755            4.30802e-19            one dimensional contraction
+   446          756            4.30802e-19            reflection
+   447          757            4.30802e-19            reflection
+   448          758            4.30802e-19            reflection
+   449          760            4.30802e-19            one dimensional contraction
+   450          762            4.30802e-19            one dimensional contraction
+   451          764            4.30802e-19            one dimensional contraction
+   452          766            4.30802e-19            one dimensional contraction
+   453          767            4.30802e-19            reflection
+   454          769            4.30802e-19            one dimensional contraction
+   455          770            4.30802e-19            reflection
+   456          772            4.30802e-19            one dimensional contraction
+   457          773            4.30802e-19            reflection
+   458          775            4.30802e-19            one dimensional contraction
+   459          776            4.30802e-19            reflection
+   460          778            4.30802e-19            one dimensional contraction
+   461          779            4.30802e-19            reflection
+   462          781            4.30802e-19            one dimensional contraction
+   463          782            4.30802e-19            reflection
+   464          784            4.30802e-19            one dimensional contraction
+   465          786            4.30802e-19            one dimensional contraction
+   466          788            4.30802e-19            one dimensional contraction
+   467          789            4.30802e-19            reflection
+   468          790            4.30802e-19            reflection
+   469          792            4.30802e-19            one dimensional contraction
+   470          794            4.30802e-19            one dimensional contraction
+   471          795            4.30802e-19            reflection
+   472          797            4.30802e-19            one dimensional contraction
+   473          798            4.30802e-19            reflection
+   474          800            4.30802e-19            one dimensional contraction
+   475          802            4.30802e-19            one dimensional contraction
+   476          804            4.30802e-19            one dimensional contraction
+   477          806            4.30802e-19            one dimensional contraction
+   478          807            4.30802e-19            reflection
+   479          808            4.30802e-19            reflection
+   480          809            4.30802e-19            reflection
+   481          810            4.30802e-19            reflection
+   482          812            4.30802e-19            one dimensional contraction
+   483          814            4.30802e-19            one dimensional contraction
+   484          815            4.30802e-19            reflection
+   485          816            4.30802e-19            reflection
+   486          817            4.30802e-19            reflection
+   487          818            4.30802e-19            reflection
+   488          820            4.30802e-19            one dimensional contraction
+   489          822            4.30802e-19            one dimensional contraction
+   490          824            4.30802e-19            one dimensional contraction
+   491          826            4.30802e-19            one dimensional contraction
+   492          828            4.30802e-19            one dimensional contraction
+   493          829            4.30802e-19            reflection
+   494          830            4.30802e-19            reflection
+   495          831            4.30802e-19            reflection
+   496          833            4.30802e-19            one dimensional contraction
+   497          835            4.30802e-19            one dimensional contraction
+   498          836            4.30802e-19            reflection
+   499          837            4.30802e-19            reflection
+   500          839            4.30802e-19            one dimensional contraction
+   501          841            4.30802e-19            one dimensional contraction
+   502          842            4.30802e-19            reflection
+   503          843            4.30802e-19            reflection
+   504          844            4.30802e-19            reflection
+   505          846            4.30802e-19            one dimensional contraction
+   506          847            4.30802e-19            reflection
+   507          849            4.30802e-19            one dimensional contraction
+   508          850            4.30802e-19            reflection
+   509          852            4.30802e-19            one dimensional contraction
+   510          854            4.30802e-19            one dimensional contraction
+   511          855            4.30802e-19            reflection
+   512          856            4.30802e-19            reflection
+   513          857            4.30802e-19            reflection
+   514          859            4.30802e-19            one dimensional contraction
+   515          861            4.30802e-19            one dimensional contraction
+   516          863            4.30802e-19            one dimensional contraction
+   517          865            4.30802e-19            one dimensional contraction
+   518          867            4.30802e-19            one dimensional contraction
+   519          868            4.30802e-19            reflection
+   520          869            4.30802e-19            reflection
+   521          870            4.30802e-19            reflection
+   522          872            4.30802e-19            one dimensional contraction
+   523          874            4.30802e-19            one dimensional contraction
+   524          876            4.30802e-19            one dimensional contraction
+   525          877            4.30802e-19            reflection
+   526          878            4.30802e-19            reflection
+   527          880            4.30802e-19            one dimensional contraction
+   528          881            4.30802e-19            reflection
+   529          882            4.30802e-19            reflection
+   530          883            4.30802e-19            reflection
+   531          885            4.30802e-19            one dimensional contraction
+   532          886            4.30802e-19            reflection
+   533          887            4.30802e-19            reflection
+   534          888            4.30802e-19            reflection
+   535          890            4.30802e-19            one dimensional contraction
+   536          892            4.30802e-19            one dimensional contraction
+   537          893            4.30802e-19            reflection
+   538          894            4.30802e-19            reflection
+   539          896            4.30802e-19            one dimensional contraction
+   540          898            4.30802e-19            one dimensional contraction
+   541          900            4.30802e-19            one dimensional contraction
+   542          902            4.30802e-19            one dimensional contraction
+   543          904            4.30802e-19            one dimensional contraction
+   544          905            4.30802e-19            reflection
+   545          906            4.30802e-19            reflection
+   546          907            4.30802e-19            reflection
+   547          909            4.30802e-19            one dimensional contraction
+   548          911            4.30802e-19            one dimensional contraction
+   549          912            4.30802e-19            reflection
+   550          913            4.30802e-19            reflection
+   551          914            4.30802e-19            reflection
+   552          916            4.30802e-19            one dimensional contraction
+   553          918            4.30802e-19            one dimensional contraction
+   554          920            4.30802e-19            one dimensional contraction
+   555          921            4.30802e-19            reflection
+   556          922            4.30802e-19            reflection
+   557          924            4.30802e-19            one dimensional contraction
+   558          925            4.30802e-19            reflection
+   559          926            4.30802e-19            reflection
+   560          928            4.30802e-19            one dimensional contraction
+   561          929            4.30802e-19            reflection
+   562          931            4.30802e-19            one dimensional contraction
+   563          932            4.30802e-19            reflection
+   564          933            4.30802e-19            reflection
+   565          934            4.30802e-19            reflection
+   566          936            4.30802e-19            one dimensional contraction
+   567          938            4.30802e-19            one dimensional contraction
+   568          939            4.30802e-19            reflection
+   569          940            4.30802e-19            reflection
+   570          942            4.07764e-19            reflection
+   571          944            4.07764e-19            one dimensional contraction
+   572          946            4.07764e-19            one dimensional contraction
+   573          948            4.07764e-19            one dimensional contraction
+   574          949            4.07764e-19            reflection
+   575          951            3.98215e-19            reflection
+   576          952            3.98215e-19            reflection
+   577          954            1.45798e-19            reflection
+   578          956            1.45798e-19            one dimensional contraction
+   579          958             1.2318e-19            one dimensional contraction
+   580          960             1.2318e-19            one dimensional contraction
+   581          961             1.2318e-19            reflection
+   582          963            5.91185e-20            one dimensional contraction
+   583          968            5.50767e-20            contraction around best point
+   584          970            5.50767e-20            one dimensional contraction
+   585          972            1.83843e-20            reflection
+   586          973            1.83843e-20            reflection
+   587          975            1.83843e-20            one dimensional contraction
+   588          976            1.83843e-20            reflection
+   589          978            1.45978e-20            reflection
+   590          979            1.45978e-20            reflection
+   591          981            3.49859e-21            reflection
+   592          983            3.49859e-21            one dimensional contraction
  
 Estimated parameters
 ====================
-a = 8.71874   
-b = 1.31307   
+a = 0.333   
+b = 0.667   
 
 Estimated initial conditions
 ============================
-x1=0 (Experiment 1)
-x2=1.05365 (Experiment 1)
+x1=0.333 (Experiment 1)
+x2=0.667 (Experiment 1)
 
-Optimal cost: 9.63408
+Optimal cost: 3.49859e-21
 
 output = 
 
   struct with fields:
 
          parameters: {2x1 cell}
-               Popt: [8.7187 1.3131]
+               Popt: [0.3330 0.6670]
     parameterslocal: {}
           PLOCALopt: []
             icnames: {2x1 cell}
-              ICopt: [0 1.0536]
-            FVALopt: 9.6341
+              ICopt: [0.3330 0.6670]
+            FVALopt: 3.4986e-21
          projectopt: [1x1 IQMprojectSB]
          estimation: [1x1 struct]
 
-[?1h=[?1h=[?1h=Building with 'gcc'.
-[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=MEX completed successfully.
 [?1h=[?1h=[?1h=Building with 'gcc'.
 [?1h=[?1h=[?1h=[?1h=[?1h=[?1h=MEX completed successfully.
 	IQMprojectSB
 	============
 	Name: project
 	Number Models:			1
-	Number Experiments:		2
-	Number Measurements:	2
+	Number Experiments:		1
+	Number Measurements:	1
 	Number Estimations:		0
 
 [?1l>
 
-CPU time: 12.21+133.71 sec	Max. resident set size: 1161772 KB	 Elapsed: 31.90 sec.
+CPU time: 8.25+120.10 sec	Max. resident set size: 1172308 KB	 Elapsed: 27.22 sec.

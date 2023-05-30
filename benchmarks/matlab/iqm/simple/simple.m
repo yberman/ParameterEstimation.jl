@@ -25,8 +25,8 @@ IQMcomparemeasurements(lv);
 % Global parameters
 % Names         Lower bounds  Upper bounds
 paramdata = {
-'a' 0.0 10.0
-'b' 0.0 3.0
+'a' 0.0 1.0
+'b' 0.0 1.0
 };
 
 % Local (experiment dependend) parameters
@@ -37,8 +37,8 @@ paramdatalocal = {
 % Initial conditions (always experiment dependend)
 % Names         Lower bounds  Upper bounds
 icdata = {
-    'x1'  0.0 1.5
-    'x2'  0.0 1.5
+    'x1'  0.0 1.0
+    'x2'  0.0 1.0
 };
 
 

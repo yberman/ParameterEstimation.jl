@@ -25,20 +25,9 @@ IQMcomparemeasurements(lv);
 % Global parameters
 % Names         Lower bounds  Upper bounds
 paramdata = {
-'k1'             0.0001        .1
-'k2'             0.0001        .1
-'k3'             0.0001        .1
-% 'kRGact'       0.114811      11.4811
-% 'k1Gact'       999.422       99942.2
-% 'k2Gact'       0.419216      41.9216
-% 'kGactPDEact'  0.0365684     3.65684
-% 'kRArr1'       0.0101633     1.01633
-% 'kRArr2'       0.0405202     4.05202
-% 'kGr1'         0.00175855    0.175855
-% 'kGr2'         0.23023       23.023
-% 'kG'           0.238471      23.8471
-% 'magStim'      0.2           20
-% 'durStim'      0.01          1
+'k1'             0.0           1.0
+'k2'             0.0           1.0
+'k3'             0.0           1.0
 };
 
 % Local (experiment dependend) parameters
@@ -49,18 +38,8 @@ paramdatalocal = {
 % Initial conditions (always experiment dependend)
 % Names         Lower bounds  Upper bounds
 icdata = {
-'r'              95             110
-'w'              95             110
-% 'Arr'          0.5           50
-% 'G'            300           30000
-% 'Gact'         0             100
-% 'GactPDEact'   0             100
-% 'Gr'           0             100
-% 'PDE'          10            1000
-% 'R'            50            5000
-% 'Ract'         0             100
-% 'RactArr'      0             100
-% 'RactG'        0             100
+'r'              0.0           1.0
+'w'              0.0           1.0
 };
 
 

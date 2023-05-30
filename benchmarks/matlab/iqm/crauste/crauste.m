@@ -25,19 +25,19 @@ IQMcomparemeasurements(lv);
 % Global parameters
 % Names         Lower bounds  Upper bounds
 paramdata = {
-    'mu_N' 0.3 1.5
-    'mu_EE' 0.3 1.5
-    'mu_LE' 0.3 1.5
-    'mu_LL' 0.3 1.5
-    'mu_M' 0.3 1.5
-    'mu_P' 0.3 1.5
-    'mu_PE' 0.3 1.5
-    'mu_PL' 0.3 1.5
-    'delta_NE' 0.3 1.5
-    'delta_EL' 0.3 1.5
-    'delta_LM' 0.3 1.5
-    'rho_E' 0.3 1.5
-    'rho_P' 0.3 1.5
+    'mu_N' 0.0 1.0
+    'mu_EE' 0.0 1.0
+    'mu_LE' 0.0 1.0
+    'mu_LL' 0.0 1.0
+    'mu_M' 0.0 1.0
+    'mu_P' 0.0 1.0
+    'mu_PE' 0.0 1.0
+    'mu_PL' 0.0 1.0
+    'delta_NE' 0.0 1.0
+    'delta_EL' 0.0 1.0
+    'delta_LM' 0.0 1.0
+    'rho_E' 0.0 1.0
+    'rho_P' 0.0 1.0
 };
 
 % Local (experiment dependend) parameters
@@ -48,11 +48,11 @@ paramdatalocal = {
 % Initial conditions (always experiment dependend)
 % Names         Lower bounds  Upper bounds
 icdata = {
-    'N'         0.8             1.1
-    'E'         0.8             1.1
-    'S'         0.8             1.1
-    'M'         0.8             1.1
-    'P'         0.8             1.1
+    'N'         0.0             1.0
+    'E'         0.0             1.0
+    'S'         0.0             1.0
+    'M'         0.0             1.0
+    'P'         0.0             1.0
 };
 
 
@@ -61,7 +61,7 @@ estimation = [];
 
 % Model and experiment settings
 estimation.modelindex = 1;
-estimation.experiments.indices = [2];%, 2, 3, 4];
+estimation.experiments.indices = [1];%, 2, 3, 4];
 estimation.experiments.weight = [1];%, 1, 1, 1];
 
 % Optimization settings

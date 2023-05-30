@@ -11,8 +11,8 @@ d/dt(x1) = -a * x2
 d/dt(x2) = 1 / b * (x1)
 
 ********** MODEL PARAMETERS
-a = 0.2
-b = 0.2
+a = 0.333
+b = 0.667
 
 ********** MODEL VARIABLES
 
