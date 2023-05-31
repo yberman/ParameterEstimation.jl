@@ -28,3 +28,6 @@ docs/site/
 Manifest.toml
 
 # End of https://www.toptal.com/developers/gitignore/api/julia
+
+# yberman: do not skip *.txt files. The resulting confusion is not worth reduction in repo size!
+.vscode
