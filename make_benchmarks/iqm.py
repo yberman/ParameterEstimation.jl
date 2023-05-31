@@ -12,22 +12,29 @@ Run IQM on a given model.
 
 """
 
+import sys
 
+from pathlib import Path
+import subprocess
+import tempfile
 import os
 from jinja2 import Environment, FileSystemLoader
 
 
-def load_template():
+def load_templates():
     # need a better way to produce the template path
-    template_path = os.path.join(
-        os.getenv("HOME"),
-        "Desktop",
-        "ParameterEstimation.jl",
-        "make_benchmarks",
-        "templates",
+    template_path = (
+        Path.home()
+        / "Desktop"
+        / "ParameterEstimation.jl"
+        / "make_benchmarks"
+        / "templates"
     )
     env = Environment(loader=FileSystemLoader(template_path), autoescape=False)
-    return env.get_template("iqm.m.jinja2")
+    return {
+        "matlab": env.get_template("iqm.m.jinja2"),
+        "matlab": env.get_template("iqm.m.jinja2"),
+    } 
 
 
 template_data = {
@@ -54,8 +61,25 @@ template_data = {
             "min_value": 0.0,
             "max_value": 1.5,
         },
-    ]
+    ],
 }
 
+
+csv_file = "models"
+
 iqm_template = load_template()
-print(iqm_template.render(**template_data))
+old_pwd = os.getcwd()
+print(old_pwd)
+with tempfile.TemporaryDirectory() as proj_root_directory:
+    with open("iqm_settings.m", "w") as matlab_file:
+        matlab_file.write(iqm_template.render(**template_data))
+    os.makedirs(Path(proj_root_directory) / "project" / "experiments")
+    os.makedirs(Path(proj_root_directory) / "project" / "experiments" / "points_20")
+    os.makedirs(Path(proj_root_directory) / "project" / "models")
+    print(proj_root_directory)
+    matlab_cmd = "run iqm_settings.m; exit"
+    subprocess.run(
+        ["matlab", "-nodisplay", "-nosplash", "-nodesktop", "-r", matlab_cmd],
+        cwd=proj_root_directory,
+        stdout=sys.stdout,
+    )

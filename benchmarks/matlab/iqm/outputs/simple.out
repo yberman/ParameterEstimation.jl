@@ -1,9 +1,10 @@
 [?1h=
-                                                < M A T L A B (R) >
-                                      Copyright 1984-2022 The MathWorks, Inc.
-                                     R2022a (9.12.0.1884302) 64-bit (glnxa64)
-                                                 February 16, 2022
+                                                                                                                   < M A T L A B (R) >
+                                                                                                         Copyright 1984-2022 The MathWorks, Inc.
+                                                                                                    R2022b Update 5 (9.13.0.2193358) 64-bit (glnxa64)
+                                                                                                                    February 10, 2023
 
+Warning: X does not support locale en_US.UTF-8
  
 To get started, type doc.
 For product information, visit www.mathworks.com.
@@ -13,8 +14,8 @@ For product information, visit www.mathworks.com.
 [?1h=[?1h=[?1h=Building with 'gcc'.
 [?1h=[?1h=[?1h=[?1h=[?1h=[?1h=MEX completed successfully.
 [?1h=[?1h=[?1h=Building with 'gcc'.
-[?1h=[?1h=/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/IQMtools V1.2.2.2/IQMlite/tools/optimization/auxiliary/isres/isrsort.c: In function ‘mexFunction’:
-/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/IQMtools V1.2.2.2/IQMlite/tools/optimization/auxiliary/isres/isrsort.c:39:19: warning: implicit declaration of function ‘time’ [-Wimplicit-function-declaration]
+[?1h=[?1h=/home/yberman/Desktop/ParameterEstimation.jl/benchmarks/matlab/src/IQMtools V1.2.2.2/IQMlite/tools/optimization/auxiliary/isres/isrsort.c: In function ‘mexFunction’:
+/home/yberman/Desktop/ParameterEstimation.jl/benchmarks/matlab/src/IQMtools V1.2.2.2/IQMlite/tools/optimization/auxiliary/isres/isrsort.c:39:19: warning: implicit declaration of function ‘time’ [-Wimplicit-function-declaration]
    39 |   srand((unsigned)time(NULL));
       |                   ^~~~
 
@@ -45,17 +46,17 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 Copying files ...
 [?1h=[?1h=[?1h=[?1h=Compiling files ...
 [?1h=[?1h=[?1h=Building with 'gcc'.
-[?1h=[?1h=/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/IQMtools V1.2.2.2/IQMpro/tools/01-MEXmodels/CVODEMEX/src/source_SUNDIALS_CVODES_25/CVODEmex25.c: In function ‘handleInputArguments’:
-/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/IQMtools V1.2.2.2/IQMpro/tools/01-MEXmodels/CVODEMEX/src/source_SUNDIALS_CVODES_25/CVODEmex25.c:451:9: warning: implicit declaration of function ‘calc_ic_model’ [-Wimplicit-function-declaration]
+[?1h=[?1h=/home/yberman/Desktop/ParameterEstimation.jl/benchmarks/matlab/src/IQMtools V1.2.2.2/IQMpro/tools/01-MEXmodels/CVODEMEX/src/source_SUNDIALS_CVODES_25/CVODEmex25.c: In function ‘handleInputArguments’:
+/home/yberman/Desktop/ParameterEstimation.jl/benchmarks/matlab/src/IQMtools V1.2.2.2/IQMpro/tools/01-MEXmodels/CVODEMEX/src/source_SUNDIALS_CVODES_25/CVODEmex25.c:451:9: warning: implicit declaration of function ‘calc_ic_model’ [-Wimplicit-function-declaration]
   451 |         calc_ic_model(initialconditions, &modeldata);
       |         ^~~~~~~~~~~~~
-/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/IQMtools V1.2.2.2/IQMpro/tools/01-MEXmodels/CVODEMEX/src/source_SUNDIALS_CVODES_25/CVODEmex25.c: In function ‘initCVODE’:
-/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/IQMtools V1.2.2.2/IQMpro/tools/01-MEXmodels/CVODEMEX/src/source_SUNDIALS_CVODES_25/CVODEmex25.c:643:5: warning: implicit declaration of function ‘CVDense’ [-Wimplicit-function-declaration]
+/home/yberman/Desktop/ParameterEstimation.jl/benchmarks/matlab/src/IQMtools V1.2.2.2/IQMpro/tools/01-MEXmodels/CVODEMEX/src/source_SUNDIALS_CVODES_25/CVODEmex25.c: In function ‘initCVODE’:
+/home/yberman/Desktop/ParameterEstimation.jl/benchmarks/matlab/src/IQMtools V1.2.2.2/IQMpro/tools/01-MEXmodels/CVODEMEX/src/source_SUNDIALS_CVODES_25/CVODEmex25.c:643:5: warning: implicit declaration of function ‘CVDense’ [-Wimplicit-function-declaration]
   643 |     CVDense(cvode_mem,NRSTATES);
       |     ^~~~~~~
 
-[?1h=[?1h=[?1h=/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/IQMtools V1.2.2.2/IQMpro/tools/01-MEXmodels/CVODEMEX/src/source_SUNDIALS_CVODES_25/cvodes.c: In function ‘CVProcessError’:
-/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/IQMtools V1.2.2.2/IQMpro/tools/01-MEXmodels/CVODEMEX/src/source_SUNDIALS_CVODES_25/cvodes.c:7188:5: warning: format not a string literal and no format arguments [-Wformat-security]
+[?1h=[?1h=[?1h=/home/yberman/Desktop/ParameterEstimation.jl/benchmarks/matlab/src/IQMtools V1.2.2.2/IQMpro/tools/01-MEXmodels/CVODEMEX/src/source_SUNDIALS_CVODES_25/cvodes.c: In function ‘CVProcessError’:
+/home/yberman/Desktop/ParameterEstimation.jl/benchmarks/matlab/src/IQMtools V1.2.2.2/IQMpro/tools/01-MEXmodels/CVODEMEX/src/source_SUNDIALS_CVODES_25/cvodes.c:7188:5: warning: format not a string literal and no format arguments [-Wformat-security]
  7188 |     fprintf(stderr, msgfmt);
       |     ^~~~~~~
 
@@ -1137,52 +1138,54 @@ Experiment 2:
    296          526                9.63408            reflection
    297          528                9.63408            reflection
    298          530                9.63408            one dimensional contraction
-   299          531                9.63408            reflection
-   300          533                9.63408            one dimensional contraction
-   301          535                9.63408            one dimensional contraction
-   302          537                9.63408            one dimensional contraction
-   303          538                9.63408            reflection
-   304          540                9.63408            one dimensional contraction
-   305          541                9.63408            reflection
-   306          542                9.63408            reflection
-   307          544                9.63408            one dimensional contraction
-   308          545                9.63408            reflection
-   309          546                9.63408            reflection
-   310          548                9.63408            one dimensional contraction
-   311          553                9.63408            contraction around best point
-   312          555                9.63408            one dimensional contraction
-   313          556                9.63408            reflection
-   314          558                9.63408            reflection
-   315          559                9.63408            reflection
-   316          560                9.63408            reflection
-   317          565                9.63408            contraction around best point
-   318          566                9.63408            reflection
-   319          571                9.63408            contraction around best point
-   320          573                9.63408            one dimensional contraction
-   321          578                9.63408            contraction around best point
-   322          583                9.63408            contraction around best point
-   323          584                9.63408            reflection
-   324          589                9.63408            contraction around best point
-   325          591                9.63408            one dimensional contraction
-   326          596                9.63408            contraction around best point
-   327          598                9.63408            one dimensional contraction
-   328          603                9.63408            contraction around best point
-   329          608                9.63408            contraction around best point
-   330          609                9.63408            reflection
-   331          610                9.63408            reflection
-   332          611                9.63408            reflection
-   333          616                9.63408            contraction around best point
-   334          617                9.63408            reflection
-   335          622                9.63408            contraction around best point
-   336          624                9.63408            one dimensional contraction
-   337          626                9.63408            reflection
+   299          532                9.63408            one dimensional contraction
+   300          533                9.63408            reflection
+   301          534                9.63408            reflection
+   302          535                9.63408            reflection
+   303          537                9.63408            one dimensional contraction
+   304          538                9.63408            reflection
+   305          540                9.63408            one dimensional contraction
+   306          542                9.63408            one dimensional contraction
+   307          547                9.63408            contraction around best point
+   308          549                9.63408            one dimensional contraction
+   309          550                9.63408            reflection
+   310          555                9.63408            contraction around best point
+   311          557                9.63408            one dimensional contraction
+   312          558                9.63408            reflection
+   313          563                9.63408            contraction around best point
+   314          568                9.63408            contraction around best point
+   315          569                9.63408            reflection
+   316          570                9.63408            reflection
+   317          572                9.63408            one dimensional contraction
+   318          577                9.63408            contraction around best point
+   319          578                9.63408            reflection
+   320          580                9.63408            reflection
+   321          585                9.63408            contraction around best point
+   322          590                9.63408            contraction around best point
+   323          591                9.63408            reflection
+   324          596                9.63408            contraction around best point
+   325          597                9.63408            reflection
+   326          599                9.63408            one dimensional contraction
+   327          601                9.63408            one dimensional contraction
+   328          602                9.63408            reflection
+   329          603                9.63408            reflection
+   330          608                9.63408            contraction around best point
+   331          610                9.63408            one dimensional contraction
+   332          612                9.63408            reflection
+   333          613                9.63408            reflection
+   334          618                9.63408            contraction around best point
+   335          619                9.63408            reflection
+   336          621                9.63408            one dimensional contraction
+   337          626                9.63408            contraction around best point
    338          627                9.63408            reflection
    339          629                9.63408            one dimensional contraction
    340          630                9.63408            reflection
    341          635                9.63408            contraction around best point
-   342          636                9.63408            reflection
-   343          638                9.63408            one dimensional contraction
-   344          643                9.63408            contraction around best point
+   342          637                9.63408            one dimensional contraction
+   343          639                9.63408            one dimensional contraction
+   344          641                9.63408            one dimensional contraction
+   345          642                9.63408            reflection
+   346          644                9.63408            one dimensional contraction
  
 Estimated parameters
 ====================
@@ -1224,4 +1227,4 @@ output =
 
 [?1l>
 
-CPU time: 12.21+133.71 sec	Max. resident set size: 1161772 KB	 Elapsed: 31.90 sec.
+CPU time: 0.68+15.52 sec	Max. resident set size: 1027112 KB	 Elapsed: 17.73 sec.
